@@ -222,6 +222,22 @@
 	margin:0 auto;
 	width: 1000px;
 }
+
+#socialMedia {
+	float: right;
+	display: inline-block;
+	outline: 1px solid red;
+	width: 600px;
+	height: 135px;
+	margin-top: -140px;
+}
+
+.icon {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	padding-left: 40px;
+}
 </style>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -259,8 +275,13 @@
 <div class="parentDiv">
 	<img class="meImage" src="images/me/me2.jpg" alt="Image of myself">
 	<div class="meDesc"><p>This is a description about me.</p></div>
+	<div id="socialMedia">
+		<p>You can check me out at...</p>
+		<input class="icon" type="image" style="margin-left: 90px;" src="images/icon/youtubeIcon.png" onclick="window.open('https://www.youtube.com/user/esthieleemusic/videos?disable_polymer=1');" />
+		<input class="icon" type="image" src="images/icon/soundcloudIcon2.png" onclick="window.open('https://soundcloud.com/esthie99/cottoncandyskies');"/>
+		<input class="icon" type="image" onclick="window.open('https://www.instagram.com/esthie99/');" src="images/icon/instagramIcon.png" />
+	</div>
 </div>
-
 
 
 <!-- 
