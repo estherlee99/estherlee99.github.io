@@ -1,6 +1,7 @@
 	<!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Jomhuria" rel="stylesheet">
 <link rel="icon" 
       type="image/png" 
       href="images/favicon/estherLogo.png">
@@ -8,9 +9,104 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Esther Lee</title>
+
+    <div id = "icons">
+	</div>
+
     <!-- Bootstrap 
 <link href="css/bootstrap.css" rel="stylesheet">-->
 <style type="text/css">
+	<div id="socialMedia">
+		<p>You can check me out at...</p>
+		<input class="icon" type="image" style="margin-left: 90px;" src="images/icon/youtubeIcon.png" onclick="window.open('https://www.youtube.com/user/esthieleemusic/videos?disable_polymer=1');" />
+		<input class="icon" type="image" src="images/icon/soundcloudIcon2.png" onclick="window.open('https://soundcloud.com/esthie99/cottoncandyskies');"/>
+		<input class="icon" type="image" onclick="window.open('https://www.instagram.com/esthie99/');" src="images/icon/instagramIcon.png" />
+	</div>
+</div>
+
+
+
+#icons {
+  display: inline-block;
+  position:absolute;
+  top:50%;
+  left:50%;
+  -ms-transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+}
+
+/* Icons */
+
+a {
+  color:#fff;
+  background: #FFB6C1;
+  border-radius:4px;
+  text-align:center;
+  text-decoration:none;
+  font-family: 'Italiana', serif;
+  position: relative;
+  display: inline-block;
+  width:60px;
+  height:28px;
+  padding-top:12px;
+  margin:0 2px;
+  -o-transition:all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+   -webkit-font-smoothing: antialiased;
+}
+
+a:hover {
+  background: #ef92a3;
+}
+
+/* pop-up text */
+
+a span {
+  color:#666;
+  position:absolute;
+  font-family: 'Italiana', serif;
+  bottom:0;
+  left:-25px;
+  right:-25px;
+  padding:5px 7px;
+  z-index:-1;
+  font-size:14px;
+  border-radius:2px;
+  background:#fff;
+  visibility:hidden;
+  opacity:0;
+  -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* pop-up text arrow */
+
+a span:before {
+  content:'';
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  position:absolute;
+  bottom:-5px;
+  left:40px;
+}
+
+/* text pops up when icon is in hover state */
+
+a:hover span {
+  bottom:50px;
+  visibility:visible;
+  opacity:1;
+}
+
+
 
 	#logo {
 	background-color: #FFFFFF;
@@ -20,30 +116,30 @@
 	padding-top: 0px;
 	margin-left: 55px;
 	margin-top: 46px;
-	font-family: 'Playfair Display SC', serif;
+  font-family: 'Italiana', serif;
 	font-style: normal;
 	font-weight: 400;
 	
 }
-    #name {
+  #name {
 	/* [disabled]background-color: #93D3F0; */
 	width: 303px;
 	height: 60px;
-	margin-left: 124px;
-	margin-top: -60px;
+	margin-left: 134px;
+	margin-top: -55px;
 	padding-left: 3px;
 	padding-top: 0px;
-	font-family: 'Playfair Display SC', serif;
+  font-family: 'Italiana', serif;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 28px;
 }
     #home {
 	position: absolute;
-    right:300px;
+    right:370px;
     top:100px;
 	margin-top:-45px;
-	font-family: 'Playfair Display SC', serif;
+  font-family: 'Italiana', serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
@@ -51,10 +147,10 @@
     
     #work {
 	position: absolute;
-    right:250px;
+    right:300px;
     top:100px;
 	margin-top:-45px;
-	font-family: 'Playfair Display SC', serif;
+  font-family: 'Italiana', serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
@@ -62,10 +158,10 @@
 
 	#art{
 	position: absolute;
-    right:205px;
+    right:230px;
     top:100px;
 	margin-top:-45px;
-	font-family: 'Playfair Display SC', serif;
+  font-family: 'Italiana', serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
@@ -78,7 +174,7 @@
     right:155px;
     top:100px;
 	margin-top:-45px;
-	font-family: 'Playfair Display SC', serif;
+  font-family: 'Italiana', serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
@@ -90,7 +186,7 @@
 	height: 0px;
 	margin-left: 132px;
 	margin-top: -28px;
-	font-family: 'Playfair Display SC', serif;
+  font-family: 'Italiana', serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 11.9pt;
@@ -229,7 +325,7 @@
 
 	width: 600px;
 	height: 135px;
-	margin-top: 40px;
+	margin-top: -130px;
 }
 
 .icon {
@@ -238,6 +334,7 @@
 	height: 80px;
 	padding-left: 40px;
 }
+
 </style>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -251,8 +348,8 @@
   <body>
   <div class="container-fluid">
   <div id="logo"><img src="images/logo/estherLogo.png" width="65" height="120" alt="" style="margin-top: -29px"/></div>
-  <div id="name">ESTHER LEE</div>
-  <div id="job"><i>more than just a chemical bond</i></div>
+  <div id="name">E S T H E R</div>
+  <div id="job"><i>more than a chemical bond</i></div>
   <div id="home"><a href="index.html">home</a></div>
  <!--  <div id="work" ><a href="work.html">work</a></div> -->
   <div id="art"><a href="art.html">art</a></div>
@@ -261,7 +358,7 @@
 <div id="work" class="dropdown">
   <a href="work.html">work</a>
   <div class="dropdown-content">
-    <p><a href="work.html#workTitle">Work</a></p>
+    <p><a href="work.html#workTitle">Activities</a></p>
     <p><a href="work.html#awardsTitle">Awards</a></p>
   </div>
 </div>
@@ -274,7 +371,7 @@
 
 <div class="parentDiv">
 	<img class="meImage" src="images/me/me2.jpg" alt="Image of myself">
-	<div class="meDesc"><p>Hello! My name is Esther Lee. I am currently a senior at New Trier High School. As my first project, I created this website. I have interest in pursuing Computer Science and learning more about AI because I strongly believe in the potential of technoloy. Everyday, people are finding new, innovative ways to use technology and computer programming for the greater good. I hope that by studying Computer Science, I can be exposed to inspiration that may instigate revolutionary contributions.<p>In my free time, I love pondering, learning, and creating. My curiosity never fails me; I constantly find new things I want to understand or contemplate. When I am not thinking, I am creating. I often spend hours meticulously making and editing small films. And with every video, I gain new insights about many things. I also like composing lyrics or songs using different medias or instruments. Music has had a great impact on me, and continues to play a large role in my life. I like drawing, as well.These creations allow me to discover and exercise my originality. As a result, the products represent a slice of who I am. And I hope that this website can do the same.</p></div>
+	<div class="meDesc"><p>Hello! My name is Esther Lee. I am currently a senior at New Trier High School. As my first project, I created this website. I have interest in pursuing Computer Science and learning more about AI because I strongly believe in the potential of technology. Everyday, people are finding new, innovative ways to use technology and computer programming for the greater good. I hope that by studying Computer Science, I can be exposed to inspiration that may instigate revolutionary contributions.<p>In my free time, I love pondering, learning, and creating. My curiosity never fails me; I constantly find new things I want to understand or contemplate. When I am not thinking, I am creating. I often spend hours meticulously making and editing small films. And with every video, I gain new insights about many things. I also like composing lyrics or songs using different medias or instruments. Music has had a great impact on me, and continues to play a large role in my life. I like drawing, as well.These creations allow me to discover and exercise my originality. As a result, the products represent a slice of who I am. And I hope that this website can do the same.</p></div>
 
 	<div id="socialMedia">
 		<p>You can check me out at...</p>
@@ -283,7 +380,6 @@
 		<input class="icon" type="image" onclick="window.open('https://www.instagram.com/esthie99/');" src="images/icon/instagramIcon.png" />
 	</div>
 </div>
-
 
 <!-- 
 DropDown

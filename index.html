@@ -11,7 +11,85 @@
     <!-- Bootstrap 
 <link href="css/bootstrap.css" rel="stylesheet">-->
 <style type="text/css">
+#icons {
+  display: inline-block;
+  position:absolute;
+  top:50%;
+  left:50%;
+  -ms-transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+}
 
+/* Icons */
+
+a {
+  color:#fff;
+  background: #FFB6C1;
+  border-radius:4px;
+  text-align:center;
+  text-decoration:none;
+  font-family: 'Italiana', serif;
+  position: relative;
+  display: inline-block;
+  width:60px;
+  height:28px;
+  padding-top:12px;
+  margin:0 2px;
+  -o-transition:all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+   -webkit-font-smoothing: antialiased;
+}
+
+a:hover {
+  background: #ef92a3;
+}
+
+/* pop-up text */
+
+a span {
+  color:#666;
+  position:absolute;
+  font-family: 'Italiana', serif;
+  bottom:0;
+  left:-25px;
+  right:-25px;
+  padding:5px 7px;
+  z-index:-1;
+  font-size:14px;
+  border-radius:2px;
+  background:#fff;
+  visibility:hidden;
+  opacity:0;
+  -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* pop-up text arrow */
+
+a span:before {
+  content:'';
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  position:absolute;
+  bottom:-5px;
+  left:40px;
+}
+
+/* text pops up when icon is in hover state */
+
+a:hover span {
+  bottom:50px;
+  visibility:visible;
+  opacity:1;
+}
 	#logo {
 	background-color: #FFFFFF;
 	width: 60px;
@@ -38,50 +116,50 @@
 	font-weight: 700;
 	font-size: 28px;
 }
-    #home {
-	position: absolute;
-    right:300px;
+      #home {
+  position: absolute;
+    right:370px;
     top:100px;
-	margin-top:-45px;
-  font-family: 'Playfair Display SC', serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
+  margin-top:-45px;
+  font-family: 'Italiana', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
 }
     
     #work {
-	position: absolute;
-    right:250px;
+  position: absolute;
+    right:300px;
     top:100px;
-	margin-top:-45px;
-  font-family: 'Playfair Display SC', serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
+  margin-top:-45px;
+  font-family: 'Italiana', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
 }
 
-	#art{
-	position: absolute;
-    right:205px;
+#art{
+  position: absolute;
+    right:230px;
     top:100px;
-	margin-top:-45px;
-  font-family: 'Playfair Display SC', serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
+  margin-top:-45px;
+  font-family: 'Italiana', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
 
 
 
-	}
-    #me {
-	position: absolute;
+  } 
+  #me {
+  position: absolute;
     right:155px;
     top:100px;
-	margin-top:-45px;
-  font-family: 'Playfair Display SC', serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
+  margin-top:-45px;
+  font-family: 'Italiana', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 #job {
@@ -226,7 +304,7 @@
 <div id="work" class="dropdown">
   <a href="work.html">work</a>
   <div class="dropdown-content">
-    <p><a href="work.html#workTitle">Work</a></p>
+    <p><a href="work.html#workTitle">Activities</a></p>
     <p><a href="work.html#awardsTitle">Awards</a></p>
   </div>
 </div>
